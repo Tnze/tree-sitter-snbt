@@ -6,12 +6,7 @@
   "license": "MIT",
   "main": "bindings/node",
   "types": "bindings/node",
-  "keywords": [
-    "incremental",
-    "parsing",
-    "tree-sitter",
-    "snbt"
-  ],
+  "keywords": ["incremental", "parsing", "tree-sitter", "snbt"],
   "files": [
     "grammar.js",
     "binding.gyp",
@@ -47,7 +42,8 @@
   "tree-sitter": [
     {
       "scope": "source.snbt",
-      "injection-regex": "^snbt$"
+      "file-types": ["snbt"],
+      "highlights": "queries/highlights.scm"
     }
   ]
 }
